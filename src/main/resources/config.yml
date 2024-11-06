@@ -1,0 +1,49 @@
+# The prefix for the plugin
+prefix : "&8[&9&l!&8] &9&lTreeCapitator &8»&f"
+
+TreeCapitator:
+  # Use to enable/disable the usage of tree capitator
+  enabled: true
+  # [BETA] use asynchronous mode for collecting log
+  async: false
+  # The break delay for each log
+  delay:
+    # Enable/Disable delay for breaking the log (not for async breaking the log)
+    enabled: true
+    # The delay time foreach blocks collection/breaking
+    time: 1
+    # BAP stands for Break After Particle
+    BAP: true
+
+  particle:
+    # Enable/Disable particle when the Capitator is running
+    enabled: true
+    # Percentage of particle to be spawn (Depends on liking)
+    percentage: 65
+    # Type of particle to be used, you can check here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+    type: CAMPFIRE_COSY_SMOKE
+    # Amount of particle to be spawns, better set to low value so that low-end player will not experience lag
+    amount: 5
+    # The velocity of the particle spread, value is in points
+    speed: 0.1
+    # The Sound for particle
+    sound:
+      # Enable/Disable sound for particle
+      enabled: true
+      # The name of sound for the particle, you can check here https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      name: BLOCK_AZALEA_LEAVES_BREAK
+
+  damage:
+    # Enable/Disable damage to be applied to the tools
+    enabled: true
+    # Enable/Disable if you want unbreaking to influence the damage taken by the tools
+    unbreakingInfluence: true
+    # Added extradamage for every damage taken by the tools
+    extraDamage: 1
+
+  # You can set which world can player use treecapitator, set worlds: [] to apply on all worlds
+  worlds:
+    - world
+
+    # Enable/Disable for the player to sneak to break the logs
+  needSneak: true
