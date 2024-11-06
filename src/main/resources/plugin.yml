@@ -1,0 +1,6 @@
+name: TreeCapitator
+version: '1.21.1-1.0'
+main: dev.lipoteam.treeCapitator.TreeCapitator
+api-version: '1.21'
+authors: [ Nopal, zflrr ]
+description: TreeCapitator made by Lipo Team
