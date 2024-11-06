@@ -46,4 +46,4 @@ TreeCapitator:
     - world
 
     # Enable/Disable for the player to sneak to break the logs
-  needSneak: true
+  needsneak: true
