@@ -12,6 +12,7 @@ public final class TreeCapitator extends JavaPlugin {
     private final ConsoleCommandSender console = getServer().getConsoleSender();
     private Configurations config;
 
+    private Commands commands;
     private Event event;
 
     @Override
@@ -49,7 +50,7 @@ public final class TreeCapitator extends JavaPlugin {
     }
 
     private void RegisterCommands() {
-        new Commands(new Configurations(getConfig()));
+        commands = new Commands(new Configurations(getConfig()));
     }
 
     public static TreeCapitator getInstance() {
@@ -67,6 +68,8 @@ public final class TreeCapitator extends JavaPlugin {
 
         FileConfiguration config = this.getConfig();
         Configurations newConfig = new Configurations(config);
+
+        commands.setConfig(newConfig);
         event.setConfig(newConfig);
 
     }
