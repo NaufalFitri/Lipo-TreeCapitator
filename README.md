@@ -14,6 +14,7 @@
     <h4 align="center">
     This plugin is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
     </h4>
+<br>
 </h2>
 
 **Compatible Minecraft Server Versions**
