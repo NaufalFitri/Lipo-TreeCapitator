@@ -39,6 +39,14 @@ to customize the configuration file to their preferences.
 - Enable or disable custom damage for tools.
 - Customize custom damage for tools.
 - Enable or disable the requirement for players to sneak in order to chop down a tree.
+
+We currently only have these commands for you to reload the configuration setting that you have been customized while the server is running
+
+**Commands**
+
+- /treecapitator reload
+- /tc reload
+
 ---
 ## Configuration
 <details>
